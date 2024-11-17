@@ -1,0 +1,35 @@
+{
+  "hdr": {
+    "rotation": 0,
+    "intensity": 0.6,
+    "gammaSpace": false
+  },
+  "glow": {
+    "mainTextureFixedSize": 3000,
+    "blurKernelSize": 6,
+    "intensity": 0.6
+  },
+  "fog": {
+    "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    },
+    "density": 0.025,
+    "mode": 1
+  },
+  "directionalLight": {
+    "intensity": 3
+  },
+  "shadowGenerator": {
+    "mapSize": 2064,
+    "usePercentageCloserFiltering": true,
+    "numCascades": 4,
+    "autoCalcDepthBounds": false,
+    "depthClamp": true,
+    "stabilizeCascades": false,
+    "cascadeBlendPercentage": 0,
+    "bias": 0.001,
+    "filteringQuality": 0
+  }
+}

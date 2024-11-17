@@ -1,0 +1,79 @@
+#play_with_friends_page
+  display: flex
+  justify-content: center
+  align-items: center
+  .tabs_container
+    margin-bottom: 50px
+    width: 100%
+
+  .button-container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .uk-tab::before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 20px
+    right: 0
+    border-bottom: 1px solid #e5e5e5
+
+  .tabs>*>a
+    display: flex
+    align-items: center
+    column-gap: .25em
+    justify-content: center
+    padding: 9px 20px
+    color: #fff
+    border-bottom: 2px solid transparent
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    transition: color .1s ease-in-out
+    line-height: 20px
+    cursor: pointer
+
+  .tabs>*
+    flex: none
+    padding-left: 20px
+    position: relative
+
+  .tabs
+    display: flex
+    flex-wrap: wrap
+    margin-left: -20px
+    padding: 0
+    list-style: none
+    position: relative
+    margin-bottom: 0
+
+  .tabs>.active>a
+    color: #222
+    border-color: #1e87f0
+
+  .tabs_content
+    background-color: #222222
+    padding: 20px
+    input
+      height: 40px
+      vertical-align: middle
+      display: inline-block
+      max-width: 100%
+      width: 100%
+      padding: 0 10px
+      background: #fff
+      color: #666
+      border: 1px solid #e5e5e5
+      transition: .2s ease-in-out
+      transition-property: color,background-color,border
+      box-sizing: border-box
+      margin: 0
+      border-radius: 0
+      font: inherit
+
+    .label
+      margin-bottom: 20px
+
+    button
+      margin-left: 20px

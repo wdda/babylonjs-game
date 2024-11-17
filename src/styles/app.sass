@@ -1,0 +1,257 @@
+@font-face
+  font-family: 'Play'
+  src: url('../assets/fonts/Play-Regular.ttf')
+
+@font-face
+  font-family: 'Scifi'
+  src: url('../assets/fonts/sci_firusbyme_normal.otf')
+
+@font-face
+  font-family: 'Tektur'
+  src: url('../assets/fonts/Tektur-VariableFont_wdth,wght.ttf')
+
+::selection
+  background-color: #793ef1
+  color: white
+
+body, html
+  padding: 0
+  margin: 0
+  height: 100%
+  overscroll-behavior: contain
+  overflow: hidden
+  color: #ffffff
+  touch-action: pan-x pan-y
+
+.main_background
+  background: url('../assets/images/main_bg_1.png') no-repeat
+  background-size: cover
+  height: 100vh
+  width: 100%
+  .main_background_points
+    background-size: 20px 20px
+    background-image: radial-gradient(circle, #4148cc 1px, rgba(0, 0, 0, 0) 1px)
+    height: 100vh
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+#app
+  height: 100%
+
+#level
+  font-weight: bold
+  letter-spacing: .2rem
+  text-decoration: none
+  text-transform: uppercase
+
+.margin_bottom
+  margin-bottom: 2%
+
+.background_none
+  backdrop-filter: none !important
+  background: none !important
+
+.button
+  .label_font
+    position: absolute
+    z-index: 2
+    display: block
+    top: 0
+    padding: 20px 44px
+
+  font-family: Tektur, serif !important
+  position: relative
+  text-transform: uppercase
+  color: #fff
+  cursor: pointer
+  font-size: 20px
+  font-weight: 400
+  letter-spacing: 4px
+  &:hover
+    .icon
+      &:before,
+      &:after
+        width: 10px
+
+      span
+        &:before,
+        &:after
+          height: 10px
+
+  .label
+    padding: 20px 44px
+
+  .icon
+    display: block
+    position: absolute
+    z-index: 1
+    background-color: rgb(127 69 251 / 59%)
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    transform: skew(-20deg, 0deg)
+
+    &:before,
+    &:after
+      content: ''
+      height: 2px
+      width: 30px
+      position: absolute
+      display: block
+      background: #ffffff
+      transition: width 0.5s
+    &:before
+      left: 0
+      top: 0
+    &:after
+      right: 0
+      bottom: 0
+    span
+
+      &:before,
+      &:after
+        content: ''
+        background: #ffffff
+        position: absolute
+        display: block
+        width: 2px
+        height: 30px
+        transition: height 0.5s
+      &:before
+        left: 0
+        top: 0
+      &:after
+        right: 0
+        bottom: 0
+
+
+.label
+  padding: 10px
+  display: inline-block
+
+
+.grid
+  display: flex
+  flex-wrap: wrap
+  margin: 0
+  padding: 0
+  list-style: none
+  width: 100%
+  .child
+    flex: 1
+    min-width: 1px
+    box-sizing: border-box
+    width: 100%
+
+#home
+  top: 50%
+  left: 0
+  width: 100%
+  text-align: center
+  position: absolute
+  margin-top: -3vw
+
+  .button
+    width: 40%
+
+.modal
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10
+  width: 100%
+  height: 100%
+  background-color: rgba(255, 255, 255, 0.2)
+  backdrop-filter: blur(10px)
+  display: flex
+  justify-content: center
+  a
+    color: #ffffff
+    text-decoration: none
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: left
+    align-items: center
+  .container
+    width: 50%
+    height: 100%
+    background: black
+    padding: 4%
+    box-sizing: border-box
+    .title
+      font-size: 2.5vw
+      color: #ffffff
+      width: 100%
+
+  .content
+    position: relative
+    height: 100%
+    width: 100%
+    .list
+      width: 100%
+
+    .button_bar
+      position: absolute
+      bottom: 0
+      width: 100%
+      .button
+        width: 100%
+        text-align: center
+        justify-content: center
+
+#menu_button
+  height: 100%
+  flex: 1
+  text-align: left
+
+  .menu_button
+    background: url('../assets/images/menu.png') no-repeat
+    background-size: contain
+    width: 50%
+    height: 70%
+
+#top_bar
+    margin-top: 2%
+    height: 10%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    display: flex
+    padding: 0 2%
+    box-sizing: border-box
+    .back
+      background-color: #793ef1
+      background-image: url('../assets/images/back-icon.png')
+      background-size: 50px 50px
+      width: 50px
+      height: 50px
+      border: 0
+      border-radius: 20px
+      cursor: pointer
+
+#bottom_bar
+  margin-bottom: 2%
+  height: 10%
+  width: 100%
+  position: absolute
+  bottom: 0
+  left: 0
+  z-index: 2
+  display: flex
+  padding: 0 2%
+  box-sizing: border-box
+
+#inspector-host, #scene-explorer-host
+  z-index: 1000
+
+.list
+  padding: 0
+  list-style: none
+  li
+    margin-top: 10px

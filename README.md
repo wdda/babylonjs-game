@@ -1,8 +1,8 @@
-# Lola Project
+# Lola — a third-person game example built with Babylon.js
 
 ![babylonjs-game-lola](Screenshot.png "Lola Game BabylonJS")
 
-**Lola Project** — a demonstration of developing a third-person game using JavaScript (TypeScript) with the Babylon.js library. The project provides a ready-to-use foundation for further expansion and integration of additional features.
+**Lola** — a demonstration of developing a third-person game using JavaScript (TypeScript) with the Babylon.js library. The project provides a ready-to-use foundation for further expansion and integration of additional features.
 
 ---
 
